@@ -24,7 +24,7 @@ jobs:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm modules
-        run: npm ci
+        run: npm i
       - name: Test
         run: npm test
       - name: Grunt
@@ -128,7 +128,7 @@ jobs:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm modules
-        run: npm ci
+        run: npm i
       - name: Install grunt
         run: sudo npm i -g grunt-cli
       - name: Write secrets
@@ -187,7 +187,7 @@ jobs:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm modules
-        run: npm ci
+        run: npm i
       - name: Install grunt
         run: npm i -g grunt-cli
       - name: Write secrets
@@ -268,7 +268,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm modules
         working-directory: keeweb
-        run: npm ci
+        run: npm i
       - name: Download html artifact
         uses: actions/download-artifact@v1
         with:
