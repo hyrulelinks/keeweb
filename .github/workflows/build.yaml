@@ -67,7 +67,7 @@ jobs:
       - name: Install grunt
         run: sudo npm i -g grunt-cli
       - name: Grunt
-        run: grunt --max-old-space-size=4096 desktop-darwin ${{ github.repository != 'keeweb/keeweb' && '--skip-sign' || '' }}
+        run: grunt desktop-darwin
       - name: Upload x64 dmg artifact
         uses: actions/upload-artifact@v1
         with:
