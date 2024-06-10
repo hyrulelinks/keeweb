@@ -1,7 +1,7 @@
 name: Build
-on:
-  push:
-    tags: [ '*' ]
+
+on: workflow_dispatch
+
 jobs:
 
   web:
