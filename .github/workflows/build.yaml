@@ -24,7 +24,9 @@ jobs:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm modules
-        run: npm i
+        run: |
+          npm i
+          npm i grunt-appdmg
       - name: Grunt
         run: grunt
       - name: Upload artifact
@@ -63,7 +65,9 @@ jobs:
           node-version: '16'
           registry-url: 'https://registry.npmjs.org'
       - name: Install npm modules
-        run: npm i
+        run: |
+          npm i
+          npm i grunt-appdmg
       - name: Install grunt
         run: sudo npm i -g grunt-cli
       - name: Grunt
